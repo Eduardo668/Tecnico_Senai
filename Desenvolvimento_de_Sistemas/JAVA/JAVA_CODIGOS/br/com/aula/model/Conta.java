@@ -4,8 +4,8 @@ package br.com.aula.model;
 import java.util.Scanner;
 
 public class Conta {
-    public int  numeroAgencia = 12;
-    public int numeroConta = 5;
+    public int  numeroAgencia;
+    public int numeroConta;
     public int saldo = 2000;
 
     public void sacar(){
@@ -30,8 +30,23 @@ public class Conta {
     }
 
     public void depositar(){
+        Scanner scanner = new Scanner(System.in);
+        String agenciaNumero;
+        String contaNumero;
+        int valorDepositado;
+        System.out.println("------------------");
+        System.out.print("Digite o numero da agencia: ");
+        agenciaNumero = scanner.next();
+        System.out.println("------------------");
+        System.out.print("Digite o numero da conta: ");
+        contaNumero = scanner.next();
+        System.out.println("------------------");
+        System.out.print("Quanto você quer depositar: ");
+        valorDepositado = scanner.nextInt();
+        saldo += valorDepositado;
+        System.out.println("------------------");
+        System.out.println("Saldo atual: "+ saldo);
 
-        System.out.println("Depositar");
     }
 
 
