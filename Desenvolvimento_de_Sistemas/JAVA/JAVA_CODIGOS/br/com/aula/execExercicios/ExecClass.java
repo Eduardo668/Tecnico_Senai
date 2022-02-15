@@ -1,9 +1,9 @@
 package br.com.aula.execExercicios;
 
-import br.com.aula.exercicos.Cliente;
-import br.com.aula.exercicos.Conta;
-import br.com.aula.exercicos.Produto;
-import br.com.aula.exercicos.Veiculo;
+import br.com.aula.model.Cliente;
+import br.com.aula.model.Conta;
+import br.com.aula.model.Produto;
+import br.com.aula.model.Veiculo;
 
 import java.util.Scanner;
 

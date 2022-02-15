@@ -1,4 +1,4 @@
-package br.com.aula.exercicos;
+package br.com.aula.model;
 
 public class Veiculo {
     private String placa;
