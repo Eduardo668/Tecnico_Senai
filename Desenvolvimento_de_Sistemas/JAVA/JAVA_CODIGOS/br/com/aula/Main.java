@@ -2,11 +2,10 @@ package br.com.aula;
 
 import br.com.aula.execExercicios.ExecClass;
 
-import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) throws IOException, InterruptedException {
+    public static void main(String[] args)  {
         ExecClass contaExec = new ExecClass();
         Scanner scanner = new Scanner(System.in);
         String resp;
