@@ -14,4 +14,13 @@ public class Veiculo {
         velocidade -= valor;
         return velocidade;
     }
+
+    // Esse metodo transforma em String
+    @Override
+    public String toString() {
+        return "Veiculo{" +
+                "placa='" + placa + '\'' +
+                ", velocidade=" + velocidade +
+                '}';
+    }
 }

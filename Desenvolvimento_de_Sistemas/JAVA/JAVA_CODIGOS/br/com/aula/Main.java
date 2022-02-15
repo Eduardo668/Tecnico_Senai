@@ -1,20 +1,35 @@
 package br.com.aula;
 
-import br.com.aula.execExercicios.ContaExec;
-import br.com.aula.exercicos.Conta;
-import br.com.aula.exercicos.Veiculo;
+import br.com.aula.execExercicios.ExecClass;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
-        ContaExec contaExec = new ContaExec();
-        contaExec.executar();
+    public static void main(String[] args) throws IOException, InterruptedException {
+        ExecClass contaExec = new ExecClass();
+        Scanner scanner = new Scanner(System.in);
+        String resp;
+        System.out.println("---------------------------");
+        System.out.println("Desenvolvimento de Sistemas - JAVA");
+        System.out.println("---------------------------");
+        System.out.println("Classes disponiveis: Cliente, Conta, Veiculo");
+        System.out.println("---------------------------");
+        System.out.print("Qual classe quer executar?: ");
+        resp = scanner.next();
 
-        Veiculo veiculo = new Veiculo();
+        if (resp.toLowerCase().equals("veiculo")){
+            contaExec.executarVeiculo();
+        }
+        else if (resp.toLowerCase().equals("conta")){
+            contaExec.executarConta();
+        }
+        else if (resp.toLowerCase().equals("cliente")){
+            contaExec.executarCliente();
+        }
 
-        veiculo.acelerar(12);
-        veiculo.freiar(2);
+
+
 
 
     }
