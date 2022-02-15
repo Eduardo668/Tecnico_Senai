@@ -29,8 +29,8 @@ public class ExecClass {
 
     public void executarVeiculo(){
         Veiculo veiculo = new Veiculo();
-        System.out.println("Acelerando" + veiculo.acelerar(12));
-        System.out.println("Freiando " + veiculo.freiar(2));
+        System.out.println("Acelerando: " + veiculo.acelerar(12));
+        System.out.println("Freiando:  " + veiculo.freiar(2));
         System.out.println("Placa: ");
     }
 
