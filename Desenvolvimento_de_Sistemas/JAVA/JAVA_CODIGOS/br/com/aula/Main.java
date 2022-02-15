@@ -13,10 +13,11 @@ public class Main {
         System.out.println("---------------------------");
         System.out.println("Desenvolvimento de Sistemas - JAVA");
         System.out.println("---------------------------");
-        System.out.println("Classes disponiveis: Cliente, Conta, Veiculo");
+        System.out.println("Classes disponiveis: Cliente, Conta, Veiculo, Produto.");
         System.out.println("---------------------------");
         System.out.print("Qual classe quer executar?: ");
         resp = scanner.next();
+        System.out.println("---------------------------");
 
         if (resp.toLowerCase().equals("veiculo")){
             contaExec.executarVeiculo();
@@ -26,6 +27,9 @@ public class Main {
         }
         else if (resp.toLowerCase().equals("cliente")){
             contaExec.executarCliente();
+        }
+        else if (resp.toLowerCase().equals("produto")){
+            contaExec.executarProduto();
         }
 
 

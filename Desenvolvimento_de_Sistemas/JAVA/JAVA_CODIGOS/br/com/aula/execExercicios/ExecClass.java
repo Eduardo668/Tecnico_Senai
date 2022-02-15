@@ -2,6 +2,7 @@ package br.com.aula.execExercicios;
 
 import br.com.aula.exercicos.Cliente;
 import br.com.aula.exercicos.Conta;
+import br.com.aula.exercicos.Produto;
 import br.com.aula.exercicos.Veiculo;
 
 import java.util.Scanner;
@@ -30,6 +31,7 @@ public class ExecClass {
         Veiculo veiculo = new Veiculo();
         System.out.println("Acelerando" + veiculo.acelerar(12));
         System.out.println("Freiando " + veiculo.freiar(2));
+        System.out.println("Placa: ");
     }
 
     public void executarCliente(){
@@ -48,10 +50,14 @@ public class ExecClass {
         System.out.println("idade: "+ cliente.getIdade());
         System.out.println("----------------");
         System.out.println("telefone: "+ cliente.getTelefone());
+    }
 
+    public void executarProduto(){
+        Produto produto = new Produto();
+        produto.setPreco(3000.00);
+        produto.setNome("RTX 2070");
 
-
-
+        System.out.println("Produto "+produto.getNome()+", Preço: "+ produto.getPreco());
     }
 
 }
