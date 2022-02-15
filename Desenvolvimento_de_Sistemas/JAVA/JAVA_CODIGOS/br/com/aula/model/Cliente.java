@@ -6,6 +6,7 @@ public class Cliente {
     public String telefone;
     public int idade;
 
+
     public String getNome() {
 
         return nome;
