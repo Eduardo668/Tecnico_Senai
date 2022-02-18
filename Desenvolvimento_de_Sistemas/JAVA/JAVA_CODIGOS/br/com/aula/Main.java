@@ -30,7 +30,7 @@ public class Main {
             resp = scanner.next();
             System.out.println("---------------------------");
 
-            if (resp.toLowerCase().equals("veiculo")){
+            if (resp.equalsIgnoreCase("veiculo")){
                 contaExec.executarVeiculo();
             }
             else if (resp.toLowerCase().equals("conta")){

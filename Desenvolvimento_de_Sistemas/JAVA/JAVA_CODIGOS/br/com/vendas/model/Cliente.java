@@ -6,6 +6,13 @@ public class Cliente {
     private String nome;
     private String email;
     private String senha;
+    private double carteira;
+
+
+    public double addCarteira(double valor){
+            carteira += valor;
+        return carteira;
+    }
 
     public void createCliente(){
         Scanner scanner = new Scanner(System.in);
