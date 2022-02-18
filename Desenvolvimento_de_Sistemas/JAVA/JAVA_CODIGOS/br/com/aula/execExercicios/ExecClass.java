@@ -1,7 +1,7 @@
 package br.com.aula.execExercicios;
 
 import br.com.aula.model.Cliente;
-import br.com.aula.model.Conta;
+import br.com.aula.model.Conta1;
 import br.com.aula.model.Produto;
 import br.com.aula.model.Veiculo;
 
@@ -11,19 +11,19 @@ public class ExecClass {
     public int version = 1;
 
     public void executarConta(){
-        Conta conta = new Conta();
+        Conta1 conta1 = new Conta1();
         Scanner scanner = new Scanner(System.in);
         String resp;
 
         System.out.println("---------------------");
-        System.out.println("Seu Saldo:" +conta.saldo);
+        System.out.println("Seu Saldo:" + conta1.saldo);
         System.out.print("Você quer sacar ou deposistar [S ou D] : ");
         resp = scanner.next();
         if (resp.equals("S")){
-            conta.sacar();
+            conta1.sacar();
         }
         else{
-            conta.depositar();
+            conta1.depositar();
         }
     }
 

@@ -3,7 +3,7 @@ package br.com.aula.model;
 
 import java.util.Scanner;
 
-public class Conta {
+public class Conta1 {
     public int  numeroAgencia;
     public int numeroConta;
     public int saldo = 2000;
