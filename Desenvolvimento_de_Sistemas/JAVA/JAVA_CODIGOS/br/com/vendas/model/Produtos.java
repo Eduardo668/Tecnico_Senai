@@ -10,15 +10,21 @@ public class Produtos extends Cliente {
         this.cliente = cliente;
     }
 
+    private final ArrayList<String> produtosShow = new ArrayList<String>();
     private final ArrayList<String> produtos = new ArrayList<String>();
-    private ArrayList<String> carrinho = new ArrayList<String>();
+    private final ArrayList<String> carrinho = new ArrayList<String>();
     private final ArrayList<Double> precoProdutos = new ArrayList<Double>();
 
     public void createProducts() {
-        produtos.add("PS5 - R$5.000.00");
-        produtos.add("XBOX - R$4.000.00");
-        produtos.add("TV 50 Polegadas - R$4.500.00");
-        produtos.add("Celta Cromado e rebaixado - R$10.000.00");
+        produtosShow.add("PS5 - R$5.000.00");
+        produtosShow.add("XBOX - R$4.000.00");
+        produtosShow.add("TV 50 Polegadas - R$4.500.00");
+        produtosShow.add("Celta Cromado e rebaixado - R$10.000.00");
+
+        produtos.add("PS5");
+        produtos.add("XBOX");
+        produtos.add("TV 50 Polegadas");
+        produtos.add("Celta Cromado e rebaixado");
 
         //PS5
         precoProdutos.add(5000.00);
@@ -32,23 +38,23 @@ public class Produtos extends Cliente {
     }
 
     public void buyProducts() {
-        Conta conta = new Conta();
+        Conta conta = new Conta(cliente);
         Scanner scanner = new Scanner(System.in);
         String respProduto;
         double valorGastoTotal = 0;
         String respFinal;
-        double carteira = getCarteira();
+        double carteira = cliente.getCarteira();
         System.out.println("-------------");
-        System.out.println("Bem vindo Sr(a) " + getNome() + " a nossa loja.");
+        System.out.println("Bem vindo Sr(a) " + cliente.getNome() + " a nossa loja.");
         System.out.print("Produtos Disponiveis: ");
 
-        for (String produtos : produtos)
+        for (String produtos : produtosShow)
             System.out.print(produtos + ", ");
 
         System.out.println(" ");
         while (true) {
             System.out.println("-------------");
-            System.out.println("Carteira : R$" + carteira);
+            System.out.println("Carteira : R$" + cliente.getCarteira());
             System.out.print("Qual produto deseja adicionar ao carrinho: ");
             respProduto = scanner.next();
 
@@ -66,39 +72,40 @@ public class Produtos extends Cliente {
             System.out.print("Deseja finalizar a compra ou adicionar mais algum produto: [Fim / Add]: ");
             respFinal = scanner.next();
             if (respFinal.equalsIgnoreCase("fim"))
-                for (String produtos : carrinho)
-                    if (produtos.equals("PS5")){
-                        while (true){
-                            if (carteira < precoProdutos.get(0)){
+                for (String produtos : carrinho){
+                    if (produtos.equals("PS5")) {
+                        while (true) {
+                            if (cliente.getCarteira() < precoProdutos.get(0)) {
                                 String resp;
                                 System.out.println("Dinheiro insuficiente");
                                 System.out.println("Deseja cancelar a compra ou sacar o dinheiro no banco?: S / N: ");
                                 resp = scanner.next();
-                                if (resp.equalsIgnoreCase("s")){
+                                if (resp.equalsIgnoreCase("s")) {
                                     conta.sacar();
                                     if (carteira >= precoProdutos.get(0))
                                         break;
 
                                 }
-                            }else
-                                decreaseCarteiraValue(precoProdutos.get(0));
-                                valorGastoTotal += precoProdutos.get(0);
-                                break;
+                            } else
+                                cliente.decreaseCarteiraValue(precoProdutos.get(0));
+                            
+                            valorGastoTotal += precoProdutos.get(0);
+                            break;
 
                         }
 
 
-                    }
-                    else if (produtos.equals("XBOX")){
+                    } else if (produtos.equals("XBOX")) {
                         decreaseCarteiraValue(4000.00);
-                    }
-                    else if (produtos.equals("TV 50 Polegadas")){
+                    } else if (produtos.equals("TV 50 Polegadas")) {
                         decreaseCarteiraValue(4500.00);
-                    }
-                    else if (produtos.equals("Celta Cromado e rebaixado")) {
+                    } else if (produtos.equals("Celta Cromado e rebaixado")) {
                         decreaseCarteiraValue(10000.00);
                     }
-                break;
+
+                }
+
         }
+
     }
 }

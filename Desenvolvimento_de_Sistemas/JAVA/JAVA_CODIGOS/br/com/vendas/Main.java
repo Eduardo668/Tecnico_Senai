@@ -12,6 +12,7 @@ public class Main {
         Produtos produtos = new Produtos(cliente);
 
 
+//            vendedor.addProducts();
         cliente.createCliente();
         cliente.loginCliente();
         produtos.createProducts();

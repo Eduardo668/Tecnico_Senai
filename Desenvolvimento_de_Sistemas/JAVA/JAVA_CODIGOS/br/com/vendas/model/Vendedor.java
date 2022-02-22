@@ -37,11 +37,13 @@ public class Vendedor {
             System.out.println("------------------");
             System.out.print("Produtos Cadastrados:");
             for (String pdAdd : produtos) {
-                if(a == 0)
-                    System.out.print(" " + pdAdd + " " + preco.get(indexPreco));
-                else
-                    System.out.print(" " + pdAdd+ ":"+preco.get(indexPreco) +",");
+                System.out.print(" " + pdAdd + " ");
+
             }
+            for (double preco : preco)
+
+                System.out.print(preco);
+
             System.out.println("\n---------------------");
             System.out.print("Deseja cadastrar mais produtos? [S ou N]: ");
             resp = scanner.next();

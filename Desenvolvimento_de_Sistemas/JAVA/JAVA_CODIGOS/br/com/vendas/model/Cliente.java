@@ -6,11 +6,13 @@ public class Cliente {
     private String nome;
     private String email;
     private String senha;
-    private double carteira = 2000;
+    private double carteira;
 
 
-    public double addCarteira(double valor){
-            carteira += valor;
+    public void addCarteira(double valor){
+            this.carteira += valor;
+    }
+    public double getCarteira(){
         return carteira;
     }
 
@@ -38,9 +40,7 @@ public class Cliente {
     public String getNome(){
         return nome;
     }
-    public double getCarteira(){
-        return carteira;
-    }
+   
     public double decreaseCarteiraValue(double valor){
         carteira -= valor;
         return carteira;
