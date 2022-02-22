@@ -52,6 +52,7 @@ public class Produtos extends Cliente {
             System.out.print(produtos + ", ");
 
         System.out.println(" ");
+
         while (true) {
             System.out.println("-------------");
             System.out.println("Carteira : R$" + cliente.getCarteira());
@@ -82,13 +83,10 @@ public class Produtos extends Cliente {
                                 resp = scanner.next();
                                 if (resp.equalsIgnoreCase("s")) {
                                     conta.sacar();
-                                    if (carteira >= precoProdutos.get(0))
-                                        break;
-
                                 }
                             } else
                                 cliente.decreaseCarteiraValue(precoProdutos.get(0));
-                            
+
                             valorGastoTotal += precoProdutos.get(0);
                             break;
 
@@ -104,8 +102,9 @@ public class Produtos extends Cliente {
                     }
 
                 }
-
-        }
+            break;
+         }
+        System.out.println("Carteira : R$" + cliente.getCarteira());
 
     }
 }
