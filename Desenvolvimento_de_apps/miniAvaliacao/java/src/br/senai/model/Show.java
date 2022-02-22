@@ -4,11 +4,11 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Show {
-    private long id;
-    private String cantor;
-    private String local;
-    private double preco;
-    private String data;
+    public long id;
+    public String cantor;
+    public String local;
+    public double preco;
+    public String data;
 
     public void imprimir(){
         Random random = new Random();
@@ -22,10 +22,10 @@ public class Show {
         System.out.println("-------------------------");
         System.out.println("Local: "+ this.local);
         System.out.println("-------------------------");
-        System.out.println("Preço: "+ this.preco);
+        System.out.println("Preço: R$"+ this.preco);
         System.out.println("-------------------------");
         System.out.println("Data: "+ this.data);
-        System.out.println("-------------------------");
+        System.out.println("-------------------------\n\n");
     }
 
     public void setInfo(){
@@ -39,7 +39,7 @@ public class Show {
         System.out.print("LOCAL: ");
         local = scanner.nextLine();
         System.out.println("---------------------------");
-        System.out.print("PREÇO: ");
+        System.out.print("PREÇO: R$");
         preco = Double.parseDouble(scanner.nextLine());
         System.out.println("-------------------------");
         System.out.print("DATA: ");

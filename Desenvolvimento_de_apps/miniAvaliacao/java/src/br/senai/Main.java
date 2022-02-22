@@ -8,7 +8,7 @@ import br.senai.model.Show;
 public class Main {
     public static void main(String[] args) {
         Show show = new Show();
-        Ingresso ingresso = new Ingresso();
+        Ingresso ingresso = new Ingresso(show);
 
         show.setInfo();
         show.imprimir();

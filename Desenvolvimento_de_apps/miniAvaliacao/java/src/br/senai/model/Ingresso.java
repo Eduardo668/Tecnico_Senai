@@ -2,7 +2,13 @@ package br.senai.model;
 
 import java.util.Random;
 
-public class Ingresso {
+public class Ingresso extends Show {
+    final Show show;
+    public Ingresso(Show show){
+        this.show = show;
+    }
+
+
     public long id;
     public double valor;
     public int qtd;
@@ -12,8 +18,8 @@ public class Ingresso {
     public void setIngresso(){
         Random random = new Random();
         this.id = random.nextLong(4000);
-        this.valor = 100.00;
-        this.dataAbertura = "22/02/2022";
+        this.valor = show.preco;
+        this.dataAbertura = show.data;
         this.lote = 2;
         this.qtd = 200;
 
@@ -29,7 +35,7 @@ public class Ingresso {
         System.out.println("---------------------");
         System.out.println("Data abertura: "+ this.dataAbertura);
         System.out.println("---------------------");
-        System.out.println("Preço: "+ this.valor);
+        System.out.println("Preço: R$"+ this.valor);
         System.out.println("---------------------");
         System.out.println("Quantidade de ingressos: "+ this.qtd);
 
