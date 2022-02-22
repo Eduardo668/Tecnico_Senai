@@ -6,7 +6,7 @@ public class Cliente {
     private String nome;
     private String email;
     private String senha;
-    private double carteira;
+    private double carteira = 2000;
 
 
     public double addCarteira(double valor){
@@ -35,6 +35,16 @@ public class Cliente {
             resp = scanner.next();
         }
     }
+    public String getNome(){
+        return nome;
+    }
+    public double getCarteira(){
+        return carteira;
+    }
+    public double decreaseCarteiraValue(double valor){
+        carteira -= valor;
+        return carteira;
+    }
 
     public void loginCliente(){
         Scanner scanner = new Scanner(System.in);
@@ -53,7 +63,6 @@ public class Cliente {
                 System.out.println("Nome ou Email invalidos, tente novamente !");
 
         }
-
         System.out.println("--------------------");
         while (true){
             System.out.print("Senha: ");

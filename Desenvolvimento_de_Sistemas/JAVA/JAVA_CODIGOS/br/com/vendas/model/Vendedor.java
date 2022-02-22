@@ -1,7 +1,6 @@
 package br.com.vendas.model;
 
 import java.util.ArrayList;
-import java.util.Locale;
 import java.util.Scanner;
 
 public class Vendedor {
@@ -9,7 +8,7 @@ public class Vendedor {
     private final ArrayList<Double> preco = new ArrayList<Double>();
     private double vendedorCarteira;
 
-    public void addProducts() {
+    public void addProducts()  {
         Scanner scanner = new Scanner(System.in);
         String addProd;
         double preco1;
@@ -25,11 +24,14 @@ public class Vendedor {
             System.out.print("Adicionar Produto : ");
             addProd = scanner.next();
             this.produtos.add(addProd);
+
             indexProdutos = this.produtos.indexOf(addProd);
             System.out.println(indexProdutos);
+
             System.out.print("Preço: ");
             preco1 = scanner.nextDouble();
             this.preco.add(preco1);
+            indexPreco = this.preco.indexOf(preco1);
             indexPreco = this.produtos.indexOf(addProd);
             System.out.println(indexPreco);
             System.out.println("------------------");
@@ -43,9 +45,9 @@ public class Vendedor {
             System.out.println("\n---------------------");
             System.out.print("Deseja cadastrar mais produtos? [S ou N]: ");
             resp = scanner.next();
-            if (resp.toLowerCase().equals("n")) {
+            if (resp.toLowerCase().equals("n"))
                 break;
-            }
+
             a += 1;
 
 
