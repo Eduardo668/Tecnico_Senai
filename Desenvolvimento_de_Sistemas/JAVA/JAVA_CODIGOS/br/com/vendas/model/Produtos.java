@@ -10,9 +10,9 @@ public class Produtos extends Cliente {
         this.cliente = cliente;
     }
 
-    private ArrayList<String> produtos = new ArrayList<String>();
+    private final ArrayList<String> produtos = new ArrayList<String>();
     private ArrayList<String> carrinho = new ArrayList<String>();
-    private ArrayList<Double> precoProdutos = new ArrayList<Double>();
+    private final ArrayList<Double> precoProdutos = new ArrayList<Double>();
 
     public void createProducts() {
         produtos.add("PS5 - R$5.000.00");
@@ -32,8 +32,10 @@ public class Produtos extends Cliente {
     }
 
     public void buyProducts() {
+        Conta conta = new Conta();
         Scanner scanner = new Scanner(System.in);
         String respProduto;
+        double valorGastoTotal = 0;
         String respFinal;
         double carteira = getCarteira();
         System.out.println("-------------");
@@ -50,32 +52,50 @@ public class Produtos extends Cliente {
             System.out.print("Qual produto deseja adicionar ao carrinho: ");
             respProduto = scanner.next();
 
-            for (String products : produtos)
-                if (products.equals(respProduto))
+            for (String produtos : produtos)
+                if (produtos.equals(respProduto))
                     carrinho.add(respProduto);
 
             System.out.println("---------------");
             System.out.print("Carrinho: ");
-            for (String products : carrinho)
-                System.out.println(products + ", ");
+            for (String produtos : carrinho) {
+                System.out.println(produtos + ", ");
+            }
 
             System.out.println("---------------");
             System.out.print("Deseja finalizar a compra ou adicionar mais algum produto: [Fim / Add]: ");
             respFinal = scanner.next();
             if (respFinal.equalsIgnoreCase("fim"))
-                for (String products : carrinho)
-                    if (products.equals("PS5")){
-                        if (carteira < precoProdutos.get(0))
-                            System.out.println("Dinheiro insuficiente");
-                        decreaseCarteiraValue(5000.00);
+                for (String produtos : carrinho)
+                    if (produtos.equals("PS5")){
+                        while (true){
+                            if (carteira < precoProdutos.get(0)){
+                                String resp;
+                                System.out.println("Dinheiro insuficiente");
+                                System.out.println("Deseja cancelar a compra ou sacar o dinheiro no banco?: S / N: ");
+                                resp = scanner.next();
+                                if (resp.equalsIgnoreCase("s")){
+                                    conta.sacar();
+                                    if (carteira >= precoProdutos.get(0))
+                                        break;
+
+                                }
+                            }else
+                                decreaseCarteiraValue(precoProdutos.get(0));
+                                valorGastoTotal += precoProdutos.get(0);
+                                break;
+
+                        }
+
+
                     }
-                    else if (products.equals("XBOX")){
+                    else if (produtos.equals("XBOX")){
                         decreaseCarteiraValue(4000.00);
                     }
-                    else if (products.equals("TV 50 Polegadas")){
+                    else if (produtos.equals("TV 50 Polegadas")){
                         decreaseCarteiraValue(4500.00);
                     }
-                    else if (products.equals("Celta Cromado e rebaixado")) {
+                    else if (produtos.equals("Celta Cromado e rebaixado")) {
                         decreaseCarteiraValue(10000.00);
                     }
                 break;

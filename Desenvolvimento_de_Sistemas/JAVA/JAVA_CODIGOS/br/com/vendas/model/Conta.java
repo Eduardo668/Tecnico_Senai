@@ -6,7 +6,7 @@ public class Conta {
 
     private int numeroConta;
     private int numeroAgencia;
-    private double saldo;
+    private double saldo = 5000.00;
 
     public void sacar(){
         Scanner scanner = new Scanner(System.in);
