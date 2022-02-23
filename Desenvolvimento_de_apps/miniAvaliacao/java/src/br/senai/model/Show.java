@@ -46,6 +46,8 @@ public class Show {
         data = scanner.nextLine();
         System.out.println("------------------------- \n\n");
 
+     
+
     }
 
 

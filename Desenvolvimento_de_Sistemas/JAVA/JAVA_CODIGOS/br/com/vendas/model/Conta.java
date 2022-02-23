@@ -2,19 +2,21 @@ package br.com.vendas.model;
 
 import java.util.Scanner;
 
-public class Conta extends Cliente {
-    final Cliente cliente;
+public class Conta  {
+    private Cliente cliente;
 
     private int numeroConta;
     private int numeroAgencia;
     private double saldo ;
 
-    public Conta(Cliente cliente){
+    public Conta(){
         saldo = 100000.00;
-        this.cliente = cliente;
+
     }
 
-
+    public void setCliente(Cliente cliente){
+        this.cliente = cliente;
+    }
     public void sacar(){
         Scanner scanner = new Scanner(System.in);
         Cliente carteira = new Cliente();

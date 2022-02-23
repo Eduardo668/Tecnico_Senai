@@ -38,7 +38,7 @@ public class Produtos extends Cliente {
     }
 
     public void buyProducts() {
-        Conta conta = new Conta(cliente);
+        Conta conta = new Conta();
         Scanner scanner = new Scanner(System.in);
         String respProduto;
         double valorGastoTotal = 0;

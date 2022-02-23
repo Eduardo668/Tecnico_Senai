@@ -8,7 +8,6 @@ public class Ingresso extends Show {
         this.show = show;
     }
 
-
     public long id;
     public double valor;
     public int qtd;

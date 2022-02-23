@@ -1,6 +1,7 @@
 package br.com.vendas;
 
 import br.com.vendas.model.Cliente;
+import br.com.vendas.model.Conta;
 import br.com.vendas.model.Produtos;
 import br.com.vendas.model.Vendedor;
 
@@ -10,6 +11,7 @@ public class Main {
         Cliente cliente = new Cliente();
         Vendedor vendedor = new Vendedor();
         Produtos produtos = new Produtos(cliente);
+        Conta conta = new Conta();
 
 
 //            vendedor.addProducts();
