@@ -12,7 +12,7 @@ public class Main {
         Funcionario funcionario = new Funcionario();
         Retangulo retangulo = new Retangulo();
         Pessoa pessoa = new Pessoa();
-        int opcao;
+        String opcao;
         do {
             System.out.println("## Escolha uma das opções abaixo ##");
             System.out.println("Opção 1 - Classe Funcionario");
@@ -21,29 +21,34 @@ public class Main {
             System.out.println("Opção 4 - Sair do programa");
             System.out.println("----------------------------");
 
+
             System.out.print("Digite aqui sua opção: ");
-            opcao =  sc.nextInt();
-            System.out.println("--------------------\n--------------------");
-            if (opcao == 1){
-                funcionario.setFuncionario();
-                funcionario.setSalario();
-                System.out.println(funcionario);
-            }else if (opcao == 2){
+            opcao = sc.next();
+            System.out.println("---------------------------\n---------------------------");
+
+            if (opcao.equals("1")){
                 pessoa.setNome();
                 pessoa.setIdade();
                 System.out.println(pessoa);
-            }
-            else if (opcao == 3){
-                System.out.print("Digite altura: ");
+            } else if (opcao .equals("2")){
+                funcionario.setFuncionario();
+                funcionario.setSalario();
+                System.out.println(funcionario);
+            } else if (opcao .equals("3")){
+                System.out.print("Digite a altura: ");
                 double altura = sc.nextDouble();
-                System.out.print("Digite largura: ");
+                System.out.print("Digite a largura: ");
                 double largura = sc.nextDouble();
                 retangulo.setAltura(altura);
                 retangulo.setLargura(largura);
                 System.out.println(retangulo);
+            } else if (!opcao.equals("4")){
+                System.out.println("Escolha uma opção válida!" +
+                        "\n---------------------------" +
+                        "\n---------------------------");
             }
-        }while(opcao != 4);
 
+        }while (!opcao.equals("4"));
 
     }
 }
