@@ -1,11 +1,11 @@
 package br.com.senai.model;
 
 import java.util.ArrayList;
-import java.util.Arrays;
+
 
 public class Pessoa {
-    private ArrayList<String> nomes = new ArrayList<>();
-    private ArrayList<Integer> idade = new ArrayList<>();
+    private final ArrayList<String> nomes = new ArrayList<>();
+    private final ArrayList<Integer> idade = new ArrayList<>();
 
 
     public void setNome() {

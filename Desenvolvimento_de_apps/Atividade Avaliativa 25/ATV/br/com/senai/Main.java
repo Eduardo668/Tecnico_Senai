@@ -25,6 +25,8 @@ public class Main {
             opcao =  sc.nextInt();
             System.out.println("--------------------\n--------------------");
             if (opcao == 1){
+                funcionario.setFuncionario();
+                funcionario.setSalario();
                 System.out.println(funcionario);
             }else if (opcao == 2){
                 pessoa.setNome();
