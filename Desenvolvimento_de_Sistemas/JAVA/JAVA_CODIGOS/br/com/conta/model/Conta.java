@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Conta {
     private double saldo;
     private double limite;
-    private int numero; n        
+    private int numero;
     public double sacar(double valor){
 
         if(saldo <= limite){
