@@ -1,4 +1,4 @@
-package br.com.veiculoHeranca.model;
+package br.com.veiculoHerancaExemplo.model;
 
 public class Carro extends Veiculo{
     private int portas;

@@ -1,4 +1,4 @@
-package br.com.veiculoHeranca.model;
+package br.com.veiculoHerancaExemplo.model;
 
 public abstract class Veiculo {
     private String nome;

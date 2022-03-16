@@ -1,6 +1,6 @@
-package br.com.veiculoHeranca;
+package br.com.veiculoHerancaExemplo;
 
-import br.com.veiculoHeranca.model.Carro;
+import br.com.veiculoHerancaExemplo.model.Carro;
 
 public class Main {
     public static void main(String[] args) {
