@@ -19,6 +19,7 @@ public class ItensDoPedido {
 
     public void printProdutosDisponiveisPedido1(){
         produtos.produtosPedido1();
+        System.out.println("");
     }
     public void printProdutosDisponiveisPedido2(){
         produtos.produtosPedido2();

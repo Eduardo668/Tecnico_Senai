@@ -44,7 +44,7 @@ public class Pedido {
 
     @Override
     public String toString() {
-        return "Descricao: " + getDescricao() +
+        return "Descrição: " + getDescricao() +
                 "\nTotal: R$" + total +
                 "\nData: " + data ;
     }

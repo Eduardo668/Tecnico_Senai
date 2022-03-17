@@ -38,6 +38,7 @@ public class Produtos {
     public void produtosPedido1(){
         System.out.println("Produtos Disponiveis");
         System.out.println("|Produtos|Preço |");
+        System.out.println("");
         for (int i = 0;i < 10;i++){
             System.out.println(nomeProdutos.get(i)+"|R$"+precoProdutos.get(i));
         }
