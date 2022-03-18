@@ -20,18 +20,18 @@ body{
 .titleParagrafo{
     position: relative;
     top: 1vh;
-    left: 2vw;
+    left: 6vw;
 }
 .containerParagrafo{
     display: flex;
     align-items: center;
     position: absolute;
-    left: 4vw;
+    left: 2vw;
     bottom: 56vh;
 }
 .paragrafo{
     position: relative;
-    right: 35vw;
+    right: 31vw;
     top: 35vh;
     text-align:center;
     font-size: 29px;
