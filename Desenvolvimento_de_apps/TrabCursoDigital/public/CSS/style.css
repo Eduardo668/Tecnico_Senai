@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(236, 236, 236);
+}
+
+.container{
+    width: 40vw;
+    height: 40vw;
+    display: flex;
+    background-color: white;
+    position: absolute;
+    left: 55vw;
+    border-radius: 10px;
+    top: 10vh;
+}
+.titleParagrafo{
+    position: relative;
+    top: 1vh;
+    left: 2vw;
+}
+.containerParagrafo{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 4vw;
+    bottom: 56vh;
+}
+.paragrafo{
+    position: relative;
+    right: 35vw;
+    top: 35vh;
+    text-align:center;
+    font-size: 29px;
+    font-family: monospace;
+}
+.header{
+    width: 100vw;
+    background-color: orange;
+    height: 8vh;
+    display: flex;
+}
+.title{
+   position: relative;
+   left: 41vw;
+   top: 1vh;
+}
+.logo{
+    position: relative;
+    left: 42vw;
+    top: 1vh;
+}
+.titleCurso{
+    font-size: 3.2vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.titleContainer{
+    position: relative;
+    left: 10vw;
+    top: 5vh;
+}
+.formulario{
+    position: relative;
+    top: 15vh;
+    right: 12vw;
+}
+.inputs{
+    font-size: 22px;
+    border-radius: 5px;
+    width: 25vw;
+    height: 5vh;
+    outline: none;
+    border: solid 1px orange;
+}
+.labels{
+    font-size: 1.4vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    bottom: 1vh;
+}
+.inputDiv{
+    margin-top: 7vh;
+}
+
+.buttonCadastrar{
+    font-size: 30px;
+    padding: 1vw;
+    border: solid transparent;
+    border-radius: 10px;
+    background-color: orange;
+    color: white;
+    position: relative;
+    left: 8vw;
+    top: 5vh;
+}
+.buttonCadastrar:hover{
+    background-color: rgb(192, 125, 2);
+}  
+
+.foot{
+    background-color: orange;
+    width: 100vw;
+    height: 10vh;
+    position: absolute;
+    top: 97.9vh;
+}
+
+.referencia{
+    font-size: 20px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 1.2vw;
+}
