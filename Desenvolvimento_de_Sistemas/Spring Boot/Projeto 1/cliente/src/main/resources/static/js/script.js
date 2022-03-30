@@ -7,7 +7,7 @@ const showModalDeletar = function(path, id){
     $('#modalDeletar').modal('show')
 }
 
-const deletar = function(){
+const deletar = ()=>{
     if (path_selected != "" && id_selected != ""){
         window.location.href='/' + path_selected + '/delete/' + id_selected
     }
