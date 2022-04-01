@@ -27,12 +27,16 @@ public class Main {
         System.out.println("-------------------");
         System.out.println(imobiliaria);
         System.out.println("Residencias");
-        System.out.println(imobiliaria.getResidencias());
+        for(Residencia residenciaInfo : imobiliaria.getResidencias()){
+            System.out.println(residenciaInfo);
+        }
         System.out.println("-------------------\n");
         System.out.println("Imobiliaria 2");
         System.out.println("-------------------");
         System.out.println(imobiliaria2);
-        System.out.println(imobiliaria2.getResidencias().toString());
+        for(Residencia residenciaInfo2 : imobiliaria2.getResidencias()){
+            System.out.println(residenciaInfo2);
+        }
         System.out.println("-------------------");
 
 
