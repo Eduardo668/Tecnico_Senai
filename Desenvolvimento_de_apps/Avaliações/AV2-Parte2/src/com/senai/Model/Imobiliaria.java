@@ -10,7 +10,7 @@ public class Imobiliaria {
     private Endereco endereco;
 
     private ArrayList<com.senai.Model.Residencia> residencias;
-    public ArrayList<com.senai.Model.Residencia> residencias600mil;
+    private ArrayList<com.senai.Model.Residencia> residencias600mil;
 
     public Imobiliaria(String nome, long id, ArrayList<com.senai.Model.Residencia> residencias, int idEndereco,int numeroEndereco, String cep ){
         this.nome = nome;
@@ -34,20 +34,17 @@ public class Imobiliaria {
         return residencias;
     }
 
-    public void valorAcima(double valor){
-        if (valor >= 600000.00){
 
-        }
+
+    public void setResidencias600mil(ArrayList<Residencia> residencia7, double valor){
+       this.residencias600mil = residencia7;
+        residencias600mil.removeIf(residencia -> residencia.getValor() <= valor);
+
     }
 
+
     public ArrayList<Residencia> getResidencias600mil(){
-        ArrayList<Residencia> res = residencias600mil;
-        for (Residencia residencia1 : residencias) {
-            if (residencia1.getValor() <= 600000.00) {
-                res.add(residencia1);
-            }
-        }
-      ;
+        return residencias600mil;
     }
 
     @Override

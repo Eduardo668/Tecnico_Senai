@@ -18,8 +18,6 @@ public class Residencia extends Empreendimento{
     }
 
 
-
-
     @Override
     public String toString() {
         return "-----------------"+

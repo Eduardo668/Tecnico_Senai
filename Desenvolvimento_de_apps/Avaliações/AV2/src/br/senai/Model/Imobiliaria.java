@@ -28,10 +28,16 @@ public class Imobiliaria {
 
     @Override
     public String toString() {
-           return "Id: "+ getId()+
+           String a = "Id: "+ getId()+
                 "\nNome: "+ getNome()+
-                   "\n----------------";
-
+                "\n----------------";
+            int c = 1;
+           for (Residencia residencia : residencias){
+               a += "\nResidencia "+c+": "+residencia.getEndereco() + " \n";
+               c+=1;
+           }
+//                   "\n----------------";
+        return a;
 
 
     }
