@@ -7,9 +7,14 @@ import org.springframework.web.bind.annotation.PostMapping;
 @Controller
 public class IndexController {
 
-    @GetMapping("/")
+    @GetMapping("/Home")
     public String index(){
         return "index";
+    }
+
+    @GetMapping("/Servico")
+    public String servico(){
+        return "servico";
     }
 
 
