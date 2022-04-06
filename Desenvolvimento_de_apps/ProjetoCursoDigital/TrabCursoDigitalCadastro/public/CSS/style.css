@@ -5,6 +5,7 @@
 
 body{
     background-color: rgb(236, 236, 236);
+    overflow-x: hidden;
 }
 
 .container{
@@ -17,42 +18,51 @@ body{
     border-radius: 10px;
     top: 10vh;
 }
+
 .titleParagrafo{
     position: relative;
     top: 1vh;
-    left: 6vw;
+    left:0% ;
 }
 .containerParagrafo{
     display: flex;
     align-items: center;
     position: absolute;
     left: 2vw;
-    bottom: 56vh;
+    bottom: 50%;
 }
 .paragrafo{
     position: relative;
-    right: 31vw;
-    top: 35vh;
+    right: 45%;
+    top: 36vh;
     text-align:center;
-    font-size: 29px;
+    font-size: 24px;
     font-family: monospace;
 }
 .header{
-    width: 100vw;
+    width: 100%;
     background-color: orange;
     height: 8vh;
     display: flex;
 }
 .title{
    position: relative;
-   left: 41vw;
-   top: 1vh;
+   left: 37%;
+   top: 0vh;
+}
+.title .titleImg{
+    width: 70%;
 }
 .logo{
     position: relative;
-    left: 42vw;
-    top: 1vh;
+    left: 30%;
+    top: 5%;
 }
+
+.logo .logoImg{
+    width: 10%;
+}
+
 .titleCurso{
     font-size: 3.2vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -60,13 +70,13 @@ body{
 }
 .titleContainer{
     position: relative;
-    left: 10vw;
+    left: 20%;
     top: 5vh;
 }
 .formulario{
     position: relative;
     top: 15vh;
-    right: 12vw;
+    right: 70%;
 }
 .inputs{
     font-size: 22px;
@@ -83,7 +93,7 @@ body{
     bottom: 1vh;
 }
 .inputDiv{
-    margin-top: 7vh;
+    margin-top: 10%;
 }
 
 .buttonCadastrar{
@@ -93,6 +103,7 @@ body{
     border-radius: 10px;
     background-color: orange;
     color: white;
+    cursor: pointer;
     position: relative;
     left: 8vw;
     top: 5vh;
@@ -104,7 +115,7 @@ body{
 .foot{
     background-color: orange;
     width: 100vw;
-    height: 10vh;
+    height: 20vh;
     position: absolute;
     top: 97.9vh;
 }
@@ -114,4 +125,9 @@ body{
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 1.2vw;
+}
+
+@media screen{
+
+
 }
