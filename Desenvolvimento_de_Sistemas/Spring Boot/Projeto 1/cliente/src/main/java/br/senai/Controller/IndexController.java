@@ -17,6 +17,14 @@ public class IndexController {
         return "servico";
     }
 
+    @GetMapping("/Contato")
+    public String contato(){
+        return "contato";
+    }
+    @GetMapping("/Sobre")
+    public String sobre(){
+        return "sobre";
+    }
 
 
 
