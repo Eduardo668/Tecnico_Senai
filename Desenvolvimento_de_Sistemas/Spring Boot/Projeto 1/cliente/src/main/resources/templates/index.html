@@ -4,31 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Spring-boot</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="/static/css/style.css">
     <link rel="stylesheet" href="./boot">
 </head>
 <body>
     <div class="header">
-        <nav class="navBar">
-            <ul>
+        <nav id="nav" class="navBar">
+            <div></div>
+            <button class="buttonMenu" aria-label="Abrir Menu" id="buttonMenu" aria-haspopup="true" aria-controls="menu" aria-expanded="false" >
+                <span id="hamburger"></span>
+            </button>
+            <ul id="menu" role="menu">
                 <li><a class="link trasso" href="/Home">Home</a></li>
-                <li><a class="link" href="/Servico">Serviços</a></li>
+                <li><a class="link" href="/Eventos">Eventos</a></li>
                 <li><a class="link" href="/Contato">Contato</a></li>
                 <li><a class="link" href="/Sobre">Sobre</a></li>
             </ul>
         </nav>
-        <div class="logo"><img class="imgLogo" src="./IMG/dj-xxl.png" alt=""></div>
+    <div class="logo"><img class="imgLogo" src="/static/IMG/dj-xxl.png" alt=""></div>
 
     </div>
     <div class="titleDiv">
-        <img class="title" src="./IMG/titulo.gif" alt="">
+        <img class="title" src="/static/IMG/titulo.gif" alt="">
     </div>
     <div class="background">    
-        <img src="./IMG/dc7b49b3f913908b7556f8a34c338bd3.gif" alt="">
+        <img src="/static/IMG/dc7b49b3f913908b7556f8a34c338bd3.gif" alt="">
     </div>
-    <button id="service" class="buttonDisponiveis"><img src="./IMG/coollogo_com-25368814.gif" alt=""></button>
+    <button id="service" class="buttonDisponiveis"><img src="/static/IMG/coollogo_com-25368814.gif" alt=""></button>
     <div class="footer">
+        <div>
+            <p>Desenvolvido Por Eduardo Paixão</p>
+        </div>
     </div>
-    <script src="./js/main.js"></script>
+    <script src="/static/js/main.js"></script>
 </body>
 </html>

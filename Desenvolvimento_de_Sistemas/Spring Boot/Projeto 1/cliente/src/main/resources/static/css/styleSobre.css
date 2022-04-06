@@ -21,6 +21,7 @@ body{
 }
 .link{
     text-decoration:none ;
+       cursor: pointer;
     color: cyan;
     font-family: monospace;
     font-size: 1.3vw;
