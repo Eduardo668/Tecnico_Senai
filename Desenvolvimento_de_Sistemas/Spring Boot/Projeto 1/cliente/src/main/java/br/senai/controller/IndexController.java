@@ -1,8 +1,7 @@
-package br.senai.Controller;
+package br.senai.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
 public class IndexController {
@@ -23,6 +22,7 @@ public class IndexController {
     public String contato(){
         return "contato";
     }
+
     @GetMapping("/Sobre")
     public String sobre(){
         return "sobre";
