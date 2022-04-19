@@ -20,3 +20,7 @@ function toggleMenu(event) {
 
 buttonMenu.addEventListener('click', toggleMenu);
 buttonMenu.addEventListener('touchstart', toggleMenu);
+
+function edit(){
+    window.href.location = "/cliente/edit"
+}

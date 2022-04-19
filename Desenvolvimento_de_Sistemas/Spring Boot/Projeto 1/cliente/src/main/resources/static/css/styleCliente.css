@@ -3,7 +3,7 @@
     padding: 0;
 }
 body{
-    background-color:rgb(12,12,34,255);/*12,13,34,255 */
+    background-color: rgba(12,13,34,255);
     overflow: hidden;
     
     
@@ -14,11 +14,30 @@ body{
     background-color: rgb(37, 37, 37);
 }
 
+.divTable{
+    width: 70%;
+    position: absolute;
+    top: 20vh;
+    left: 12%;
+}
+
 .navBar{
     position: relative;
     top: 3vh;
     left: 3%;
 }
+
+.colunaCpfTable{
+    width: 22%;
+}
+
+.imgLogo2{
+    width: 10%;
+    position: relative;
+    left: 21%;
+    cursor: pointer;
+}
+
 .link{
     text-decoration:none ;
     color: cyan;
@@ -37,7 +56,7 @@ body{
 .logo{
     position: relative;
     left: 47%;
-    bottom: 2vh;
+    bottom: 5vh;
 }
 .trasso{
     color: white;
