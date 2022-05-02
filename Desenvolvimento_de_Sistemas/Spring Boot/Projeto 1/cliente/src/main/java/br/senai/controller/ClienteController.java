@@ -2,6 +2,7 @@ package br.senai.controller;
 
 
 import br.senai.Model.Cliente;
+import br.senai.repository.ClienteRepositorio;
 import br.senai.service.ClienteServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -33,14 +34,17 @@ public class ClienteController {
         return "cliente/list";
     }
 
+    @Autowired
+    private ClienteRepositorio clienteRepositorio;
+
     @GetMapping("/cliente/list/delete{id}")
     public String delete(@PathVariable("id") long id){
         Optional<Cliente> clienteOpt = clienteService.findById(id);
         if(clienteOpt.isEmpty()){
             throw new IllegalArgumentException("Pessoa invalida");
         }
-
-        clienteService.delete(clienteOpt);
+        clienteService.delete(clienteOpt.get());
+        return "redirect:/cliente/list";
     }
 
 }

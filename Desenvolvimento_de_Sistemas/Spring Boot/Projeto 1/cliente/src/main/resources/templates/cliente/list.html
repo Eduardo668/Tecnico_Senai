@@ -44,7 +44,7 @@
                   <td th:text="${cliente.email}" ></td>
                   <td th:text="${cliente.cpf}" ></td>
                   <td>
-                      <a class="btn btn-danger" th:href="/cliente/list/delete{id}(id=${cliente.id})">DELETAR</a>
+                      <a class="btn btn-danger" th:href="@{/cliente/list/delete{id}(id=${cliente.id})}" >DELETAR</a>
                   </td>
               </tr>
             </tbody>

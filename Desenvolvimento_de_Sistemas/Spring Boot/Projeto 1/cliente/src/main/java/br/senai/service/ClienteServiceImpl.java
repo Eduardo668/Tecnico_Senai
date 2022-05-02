@@ -27,10 +27,13 @@ public class ClienteServiceImpl implements ClienteService {
         return clienteRepositorio.save(cliente);
     }
 
-    @Override
-    public Optional<Cliente> delete() {
-        return clienteRepositorio.delete();
-    }
+        public void delete(Cliente cliente){
+            clienteRepositorio.delete(cliente);
+        }
+//
+//    public List<Cliente> delete(List<Cliente> clientes) {
+//        return clienteRepositorio.delete(clientes);
+//    }
 
     @Override
     public Optional<Cliente> findById(Long id) {
