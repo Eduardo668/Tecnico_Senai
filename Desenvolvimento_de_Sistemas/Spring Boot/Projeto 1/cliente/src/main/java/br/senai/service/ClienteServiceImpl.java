@@ -30,10 +30,7 @@ public class ClienteServiceImpl implements ClienteService {
         public void delete(Cliente cliente){
             clienteRepositorio.delete(cliente);
         }
-//
-//    public List<Cliente> delete(List<Cliente> clientes) {
-//        return clienteRepositorio.delete(clientes);
-//    }
+
 
     @Override
     public Optional<Cliente> findById(Long id) {
