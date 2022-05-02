@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(236, 236, 236);
+    overflow-x: hidden;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: absolute; 
+    
+}
+
+.header{
+    width: 100%;
+    background-color: orange;
+    height: 8vh;
+    display: flex;
+}
+.title{
+   position: relative;
+   left: 40%;
+   top: 0vh;
+}
+.title .titleImg{
+    width: 70%;
+}
+.logo{
+    position: relative;
+    left: 35%;
+    top: 5%;
+}
+
+.logo .logoImg{
+    width: 10%;
+}
+
+.titleContainer{
+    position: relative;
+    left: 10%;
+    top: 5vh;
+}
+
+.cursoDisponiveis{
+    position: relative;
+    top: 10vh;
+}
+
+.buttonCursoJava{
+    font-size: 2.2vw;
+    padding: 0.2vw;
+    width: 100%;
+    justify-content: baseline;
+    border-radius: 10px;
+    border: solid transparent;
+    background-color: orange;
+    color: white;
+    position: relative;
+    top: 25vh;
+    cursor: pointer;
+    right: 30%;
+}
+.buttonCursoJava:hover{
+    background-color: rgb(173, 114, 3);
+    transition: 0.3s;
+}
+.titleButtonjava{
+    position: relative;
+    right: 12%;
+    top: 4.5vh;
+}
+.javaLogo{
+    position: relative;
+    bottom: 2.5vh;
+    left: 35%;
+    width: 4vw;
+}
+
+.background{
+    width: 100%;
+    height: 90vh;
+    background-color: black;
+    opacity: 70%;
+}
+
+.javaCursoContainer{
+    position: absolute;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    right: 14%;
+    border-radius: 10px;
+    top: 5vh;
+    z-index: 3;
+    width: 70%;
+    height: 80vh;
+    background-color: white;
+}
+
+.buttonCursocplus{
+    font-size: 2.2vw;
+    padding: 0.2vw;
+    width: 100%;
+    justify-content: baseline;
+    border-radius: 10px;
+    border: solid transparent;
+    background-color: rgb(214, 14, 0);
+    color: white;
+    position: relative;
+    top: 35vh;
+    cursor: pointer;
+    right: 30%;
+}
+.buttonCursocplus:hover{
+    background-color: rgb(173, 114, 3);
+    transition: 0.3s;
+}
+.titleButtoncplus{
+    position: relative;
+    right: 12%;
+    top: 5.4vh;
+}
+.cplusLogo{
+    position: relative;
+    bottom: 2.3vh;
+    left: 35%;
+    width: 4vw;
+}
+
+.titleJava{
+    position: relative;
+    left: 10%;
+    top: 5vh;
+}
+
+.buttonExit{
+    font-size: 2vw;
+    padding: 0.2vw;
+    width: 10%;
+    border: solid transparent;
+    background-color: red;
+    border-bottom-left-radius: 10px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    left: 90%;
+}
+.buttonExit:hover{
+    background-color: rgb(134, 0, 0);
+    transition: 0.3s;
+}
+
+.logojava{
+    position: relative;
+    left: 70%;
+    bottom: 15vh;
+}
+
+.logoJavaPng{
+    width: 10%;
+}
+
+.foot{
+    background-color: orange;
+    width: 100vw;
+    height: 20vh;
+    position: absolute;
+    top: 97.9vh;
+}
+
+.referencia{
+    font-size: 20px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 1.2vw;
+}
+

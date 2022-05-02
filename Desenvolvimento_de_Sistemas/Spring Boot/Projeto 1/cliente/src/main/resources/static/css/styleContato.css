@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgba(12,13,34,255);
+    overflow: hidden;
+    
+    
+}
+.header{
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(37, 37, 37);
+}
+
+.navBar{
+    position: relative;
+    top: 3vh;
+    left: 3%;
+}
+.link{
+    text-decoration:none ;
+       cursor: pointer;
+    color: cyan;
+    font-family: monospace;
+    font-size: 1.3vw;
+}
+.link:hover{
+    color: white;
+    transition: ease-out;
+}
+
+.imgLogo{
+    width: 3.5%;
+}
+.logo{
+    position: relative;
+    left: 47%;
+    bottom: 2vh;
+}
+.trasso{
+    color: white;
+}
+li{
+    display: inline;
+    margin: 0.5%;
+    text-decoration: none;
+    
+}
+
+.titleDiv{
+   position: absolute;
+   left: 7%;
+   top: 45vh;
+   z-index: 2;
+}
+
+.title{
+    font-family: monospace;
+    color: white;
+    font-size: 2.6vw;
+}
+
+.background{
+    position: absolute;
+    left: 50%;
+}
+
+.buttonDisponiveis{
+    width: 30%;
+    padding: 1%;
+    border-radius: 10px;
+    background-color:rgb(16, 101, 180);
+    border: solid transparent;
+    position: absolute;
+    top: 60vh;
+    left: 15%;
+}
+.buttonDisponiveis:hover{
+    background-color:rgb(12, 75, 134) ;
+    transition: ;
+}
+.linkService{
+    text-decoration: none;
+    font-size: 1.8vw;
+    color: rgb(255, 248, 248);
+    font-family: monospace;
+}
+
+
+.footer{
+    position: absolute;
+    width: 100%;
+    height: 20vh;
+    background-color:rgb(37, 37, 37) ;
+    top: 90%;
+}

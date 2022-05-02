@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(236, 236, 236);
+    overflow-x: hidden;
+}
+
+
+.header{
+    width: 100%;
+    background-color: orange;
+    height: 8vh;
+    display: flex;
+}
+.title{
+   position: relative;
+   left: 37%;
+   top: 0vh;
+}
+.title .titleImg{
+    width: 70%;
+}
+.logo{
+    position: relative;
+    left: 30%;
+    top: 5%;
+}
+
+.logo .logoImg{
+    width: 10%;
+}
+
+.container{
+    display: flex;
+    width: 40%;
+    height: 70vh;
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    left: 29%;
+    top: 14%;
+}
+
+.formulario{
+    position: relative;
+    top: 25%;
+    right: 20%;
+}
+
+.inputs{
+    width: 140%;
+    font-size: 1.5vw;
+    padding: 1.3%;
+    border-radius: 5px;
+    border: solid orange 1px;
+    outline: none;
+}
+
+.labels{
+    font-size: 2vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.inputsDiv{
+    margin-top: 10%;
+}
+.linkForgot{
+    font-family: monospace;
+    text-decoration: none;
+    color: rgb(63, 63, 63);
+}
+
+.imgTitle{
+    width: 90%;
+}
+.titleContainer{
+    position: relative;
+    left: 30%;
+    top: 5%;
+}
+.buttonLogar{
+    font-size: 2.4vw;
+    padding: 1.2vw;
+    border-radius: 10px;
+    border: transparent;
+    background-color: orange;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    position: relative;
+    left: 30%;
+    cursor: pointer;
+    top: 5vh;
+}
+.buttonLogar:hover{
+    background-color: rgb(124, 82, 2);
+}
+
+
+.foot{
+    background-color: orange;
+    width: 100vw;
+    height: 20vh;
+    position: absolute;
+    top: 90%;
+    
+    
+}
+
+.referencia{
+    font-size: 20px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 3vw;
+}
+

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FacTech</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="title"><img class="titleImg" src="./IMG/cooltext406772508882700 (1).png" alt=""></div>
+        <div class="logo"><img class="logoImg"  src="./IMG/logo.png" alt=""></div>
+    </div>
+        <div class="container">
+            <div class="titleContainer"><img class="imgTitle" src="./IMG/cooltext407330619396160.png" alt=""></div>
+            <div class="creditCardLogo"><img class="imgCreditCards" src="./IMG/Credit-Card-Icons.jpg" alt=""></div>
+            <div class="creditCard"><img class="imgCreditCard2" src="./IMG/credit-card-isometric-by-Vexels.png" alt=""></div>
+            <div class="formulario">
+                <form action="">
+                <div class="leftInputs">
+                    <div class="inputDivLeft">
+                        <div><label class="labelsLeft">Nome</label></div>
+                        <input class="inputsLeft" type="text" >
+                    </div>
+                    <div class="inputDivLeft">
+                        <div><label class="labelsLeft">CPF</label></div>
+                        <input class="inputsLeft" type="text" oninput="mascaraCpf(this)">
+                    </div>
+                    <div class="inputDivLeft">
+                        <div><label class="labelsLeft">Cidade</label></div>
+                        <input class="inputsLeft" type="text">
+                    </div>
+                    <div class="inputDivLeft">
+                        <div><label class="labelsLeft">Número</label></div>
+                        <input class="inputsLeft" type="number">
+                    </div>
+                    <div class="inputDivLeft">
+                        <div><label class="labelsLeft">UF</label></div>
+                        <input class="inputsLeft" type="text">
+                    </div>
+                    <div class="inputDivLeft">
+                        <div><label class="labelsLeft">Codigo do Cartão</label></div>
+                        <input class="inputsLeft" type="text" oninput="codigoCartao(this)">
+                    </div>
+                </div>
+                <div class="rightInputs">
+                    <div class="inputDivRight">
+                        <div><label class="labelsRight">Sobrenome</label></div>
+                        <input class="inputsRight" type="text"  >
+                    </div>
+                    <div class="inputDivRight">
+                        <div><label class="labelsRight">CEP</label></div>
+                        <input class="inputsRight" type="text">
+                    </div>
+                    <div class="inputDivRight">
+                        <div><label class="labelsRight">Bairro</label></div>
+                        <input class="inputsRight" type="text">
+                    </div>
+                    <div class="inputDivLeft">
+                        <div><label class="labelsLeft">Complemento(Opcional)</label></div>
+                        <input class="inputsLeft" type="text">
+                    </div>
+                    <div class="inputDivLeft">
+                        <div><label class="labelsLeft">Número do Cartão</label></div>
+                        <input class="inputsLeft" type="text">
+                    </div>
+                    <div class="inputDivLeft">
+                        <div><label class="labelsLeft">Data de Validade</label></div>
+                        <input class="inputsLeft" type="text" oninput="dataDeValidade(this)">
+                    </div>
+                </div>
+                
+
+                <button type="submit" class="buttonFinalizar">Finalizar</button>
+            </form>
+            </div>
+        </div>
+    <div class="foot">
+        <div class="referencia">Desenvolvido por Eduardo Paixão <br> ©Copyright 2022</div>
+    </div>
+    <script src="./JS/main.js"></script>
+</body>
+</html>
