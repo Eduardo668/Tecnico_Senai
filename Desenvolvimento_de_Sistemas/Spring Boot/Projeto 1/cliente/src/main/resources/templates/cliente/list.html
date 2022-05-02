@@ -38,11 +38,14 @@
               </tr>
             </thead>
             <tbody>
-              <tr class="table-light">
-                <th  scope="row"><p ></p></th>
-                <td ></td>
-                <td ></td>
-                <td ></td>
+              <tr th:each="cliente : ${value}" class="table-light">
+                  <td th:text="${cliente.id}"></td>
+                  <td th:text="${cliente.nome}" ></td>
+                  <td th:text="${cliente.email}" ></td>
+                  <td th:text="${cliente.cpf}" ></td>
+                  <td>
+                      <a class="btn btn-danger" th:href="/cliente/list/delete{id}(id=${cliente.id})">DELETAR</a>
+                  </td>
               </tr>
             </tbody>
           </table>
