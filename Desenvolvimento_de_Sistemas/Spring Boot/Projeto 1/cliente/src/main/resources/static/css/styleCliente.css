@@ -15,7 +15,7 @@ body{
 }
 
 .divTable{
-    width: 70%;
+    width: 85%;
     position: absolute;
     top: 20vh;
     left: 12%;
@@ -23,8 +23,7 @@ body{
 
 .navBar{
     position: relative;
-    top: 3vh;
-    left: 2%;
+    right: 14%;
 }
 
 .colunaCpfTable{
@@ -34,7 +33,7 @@ body{
 .imgLogo2{
     width: 10%;
     position: relative;
-    left: 21%;
+    left: 50%;
     cursor: pointer;
 }
 
@@ -51,7 +50,8 @@ body{
 }
 
 .imgLogo{
-    width: 3.5%;
+    width: 20%;
+    position: relative;
 }
 .logo{
     position: relative;

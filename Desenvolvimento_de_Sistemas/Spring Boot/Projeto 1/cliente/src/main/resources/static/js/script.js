@@ -9,7 +9,7 @@ const showModalDeletar = function(path, id){
 
 const deletar = ()=>{
     if (path_selected != "" && id_selected != ""){
-        window.location.href='/' + path_selected + '/delete/' + id_selected
+        window.location.href='/' + path_selected + '/delete' + id_selected
     }
 }
 
