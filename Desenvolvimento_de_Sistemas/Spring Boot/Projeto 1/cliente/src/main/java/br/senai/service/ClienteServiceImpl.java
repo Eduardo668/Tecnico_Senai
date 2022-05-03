@@ -27,7 +27,7 @@ public class ClienteServiceImpl implements ClienteService {
         return clienteRepositorio.save(cliente);
     }
 
-        public void delete(Cliente cliente){
+    public void delete(Cliente cliente){
             clienteRepositorio.delete(cliente);
         }
 //
