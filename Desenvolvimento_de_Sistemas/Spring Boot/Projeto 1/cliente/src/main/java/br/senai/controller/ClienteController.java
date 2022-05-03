@@ -34,7 +34,10 @@ public class ClienteController {
 
     @GetMapping("/cliente/add")
     public String cadastroCliente(@ModelAttribute("cliente") Cliente cliente){
+<<<<<<< Updated upstream
         String a;
+=======
+>>>>>>> Stashed changes
         return "cliente/add";
     }
 
