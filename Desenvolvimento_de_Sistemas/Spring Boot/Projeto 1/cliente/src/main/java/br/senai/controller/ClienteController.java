@@ -8,9 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PatchMapping;
-import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.*;
 
 import java.lang.ref.Cleaner;
 import java.util.List;
@@ -34,8 +32,17 @@ public class ClienteController {
         return "cliente/list";
     }
 
-    @Autowired
-    private ClienteRepositorio clienteRepositorio;
+    @GetMapping("/cliente/add")
+    public String cadastroCliente(@ModelAttribute("cliente") Cliente cliente){
+        String a;
+        return "cliente/add";
+    }
+
+    @PostMapping("/cliente/add/cadastrar")
+    public String add(@ModelAttribute("cliente") Cliente cliente){
+        clienteService.save(cliente);
+        return "redirect:/cliente/list";
+    }
 
     @GetMapping("/cliente/list/delete{id}")
     public String delete(@PathVariable("id") long id){
