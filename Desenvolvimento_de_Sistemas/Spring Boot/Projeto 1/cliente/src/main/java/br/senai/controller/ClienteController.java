@@ -38,10 +38,12 @@ public class ClienteController {
         return "cliente/add";
     }
 
-    @PostMapping("/cliente/add/cadastrar")
-    public String add(@ModelAttribute("cliente") Cliente cliente){
+    @PostMapping("/cliente/save")
+    public String add(@ModelAttribute("cliente") Cliente cliente, Model model){
+
         clienteService.save(cliente);
         return "redirect:/cliente/list";
+
     }
 
     @GetMapping("/cliente/edit{id}")

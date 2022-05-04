@@ -44,7 +44,13 @@
 
     <div style="width:40%; position:absolute; top:20vh; left:30%;" class="container-fluid container">
         <h1 style="color:white;" class="fs-1">Cadastro de Clientes</h1>
-        <form method="POST" th:action="@{/cliente/add/cadastrar}"  th:object="${cliente}">
+        <div style="display: none;" class="alert alert-success" role="alert" th:if="isSave"  id="verificartionSave" >
+          Salvo com sucesso
+        </div>
+        <div style="display: none;" class="alert alert-danger"  role="alert" th:if="isFail" id="verificartionFail" >
+          Falha ao salvar
+        </div>
+        <form method="POST" th:action="@{/cliente/save}"  th:object="${cliente}">
             <input type="hidden" id="id" th:field="*{id}">
             <div class="mb-3">
               <label for="exampleInputNome1" style="color:white;" class="form-label">Nome</label>
@@ -60,6 +66,7 @@
             </div>
 
             <button type="submit" class="btn btn-primary">Cadastrar</button>
+           
           </form>
     </div>
     <div class="footer">
