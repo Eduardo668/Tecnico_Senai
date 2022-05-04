@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
+import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import java.lang.ref.Cleaner;
 import java.util.List;
@@ -23,8 +24,14 @@ public class ClienteServiceImpl implements ClienteService {
         return clienteRepositorio.findAll();
     }
 
+
     public Cliente save(Cliente cliente){
-        return clienteRepositorio.save(cliente);
+        try {
+            return clienteRepositorio.save(cliente);
+        } catch (Exception e){
+            throw e;
+        }
+
     }
 
     public void delete(Cliente cliente){

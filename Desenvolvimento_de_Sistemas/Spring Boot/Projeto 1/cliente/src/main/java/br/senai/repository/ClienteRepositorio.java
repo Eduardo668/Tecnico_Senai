@@ -14,13 +14,13 @@ public interface ClienteRepositorio extends JpaRepository<Cliente, Long> {
     public Cliente findByCpf(String cpf);
     public Cliente findByEmail(String email);
 
-    public List<Cliente> findAll();
+//    public List<Cliente> findAll();
+//
+//    public void delete(Cliente cliente);
+//
+//    public Optional<Cliente> findById(long id);
 
-    public void delete(Cliente cliente);
-
-    public Optional<Cliente> findById(long id);
-
-    public Cliente save(Cliente cliente);
+//    public Cliente save(Cliente cliente);
 
     // Seleciona duas colunas do banco de dados, equivalente ao SELECT
     public Cliente findByCpfAndEmail(String cpf, String email);

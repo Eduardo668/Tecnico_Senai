@@ -4,7 +4,7 @@
 }
 body{
     background-color: rgba(12,13,34,255);
-    overflow: hidden;
+    overflow-x: hidden;
     
     
 }
@@ -26,7 +26,7 @@ body{
 }
 
 .colunaCpfTable{
-    width: 22%;
+    width: 30%;
 }
 
 .imgLogo2{

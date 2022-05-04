@@ -34,10 +34,7 @@ public class ClienteController {
 
     @GetMapping("/cliente/add")
     public String cadastroCliente(@ModelAttribute("cliente") Cliente cliente){
-<<<<<<< Updated upstream
         String a;
-=======
->>>>>>> Stashed changes
         return "cliente/add";
     }
 
@@ -46,6 +43,17 @@ public class ClienteController {
         clienteService.save(cliente);
         return "redirect:/cliente/list";
     }
+
+    @GetMapping("/cliente/edit{id}")
+    public String edit(@PathVariable("id") long id, Model model){
+        Optional<Cliente> clienteOpt = clienteService.findById(id);
+        if (clienteOpt.isEmpty()){
+            throw new IllegalArgumentException("Pessoa invalida");
+        }
+        model.addAttribute("cliente", clienteOpt.get());
+        return "cliente/edit";
+    }
+
 
     @GetMapping("/cliente/list/delete{id}")
     public String delete(@PathVariable("id") long id){
