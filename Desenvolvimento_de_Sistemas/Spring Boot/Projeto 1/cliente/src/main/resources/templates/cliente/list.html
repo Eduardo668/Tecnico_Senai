@@ -50,7 +50,7 @@
           </nav>
     </div>
 
-    <div class="divTable table-responsive">
+    <div class="divTable table-responsive container-sm">
         <table class="table table-bordered">
             <thead class="thead-dark">
               <tr class="table-dark">
@@ -58,6 +58,7 @@
                 <th  scope="col">Nome</th>
                 <th scope="col">Email</th>
                 <th class="colunaCpfTable" scope="col" colspan="3">Cpf</th>
+          
               </tr>
             </thead>
             <tbody>
@@ -67,11 +68,10 @@
                   <td th:text="${cliente.email}" ></td>
                   <td th:text="${cliente.cpf}" ></td>
                   <td>
-                    <a class="btn btn-success">Alterar</a>
+                    <a th:href="@{/cliente/edit{id}(id=${cliente.id})}" class="btn btn-success">Alterar</a>
                     <button type="button" th:value="${cliente.id}" onclick="showModalDeletar('cliente/list',this.value)" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalDeletar">
                       Deletar
                     </button>
-                    
                   </td>
                   <div>
                     <div id="modalDeletar" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
