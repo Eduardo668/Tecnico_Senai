@@ -39,7 +39,7 @@ public class ClienteController {
     }
 
     @PostMapping("/cliente/save")
-    public String add(@ModelAttribute("cliente") Cliente cliente, Model model){
+    public String add(@ModelAttribute("cliente") Cliente cliente){
 
         clienteService.save(cliente);
         return "redirect:/cliente/list";

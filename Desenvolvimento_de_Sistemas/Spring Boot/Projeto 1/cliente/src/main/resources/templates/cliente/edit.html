@@ -44,7 +44,7 @@
 
 <div style="width:40%; position:absolute; top:20vh; left:30%;" class="container-fluid container">
     <h1 style="color:white;" class="fs-1">Editar Cliente</h1>
-    <form method="POST" th:action="@{/cliente/add/cadastrar}"  th:object="${cliente}">
+    <form method="POST" th:action="@{/cliente/save}"  th:object="${cliente}">
         <input type="hidden" id="id" th:field="*{id}">
         <div class="mb-3">
             <label for="exampleInputNome1" style="color:white;" class="form-label">Nome</label>
