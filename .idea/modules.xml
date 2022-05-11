@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Tecnico_Senai.iml" filepath="$PROJECT_DIR$/.idea/Tecnico_Senai.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Desenvolvimento_de_Sistemas/Spring Boot/Projeto 1/cliente/cliente.iml" filepath="$PROJECT_DIR$/Desenvolvimento_de_Sistemas/Spring Boot/Projeto 1/cliente/cliente.iml" />
       <module fileurl="file://$PROJECT_DIR$/Desenvolvimento_de_Sistemas/cliente3b/cliente3b.iml" filepath="$PROJECT_DIR$/Desenvolvimento_de_Sistemas/cliente3b/cliente3b.iml" />
     </modules>
   </component>
