@@ -7,6 +7,7 @@ import org.springframework.context.annotation.Primary;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import java.util.List;
 
 
 @Entity(name ="cliente") // Define que essa classe é uma entidade do banco de dados
@@ -22,6 +23,9 @@ public class Cliente {
     @Size(max = 100) // Define a quantidade de caracteres que poderam ser armazenados (tipo o varchar(100))
     private String nome;
 
+
+    @ManyToMany(mappedBy = "clienteEventos")
+    private List<Evento> eventosCliente;
 
     @Size(max = 100)
     private String email;
