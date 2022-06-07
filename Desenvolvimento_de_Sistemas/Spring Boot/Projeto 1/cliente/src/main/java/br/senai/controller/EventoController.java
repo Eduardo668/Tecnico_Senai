@@ -18,10 +18,10 @@ public class EventoController {
     @Autowired
     private EventoServiceImpl eventoService;
 
-    @GetMapping("/eventos/list")
+    @GetMapping("/evento/list")
     public String listaDeEvento(Model model){
         model.addAttribute("eventos", eventoService.findAllEventos());
-        return "eventos/list";
+        return "evento/list";
     }
 
     @PostMapping("/eventos/add")

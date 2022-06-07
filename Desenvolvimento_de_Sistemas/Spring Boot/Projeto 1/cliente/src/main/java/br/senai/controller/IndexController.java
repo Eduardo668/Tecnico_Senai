@@ -8,7 +8,7 @@ public class IndexController {
 
 
 
-    @GetMapping("/Home")
+    @GetMapping("/")
     public String eventos(){
         return "index";
     }

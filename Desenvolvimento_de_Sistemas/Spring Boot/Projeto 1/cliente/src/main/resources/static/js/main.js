@@ -1,6 +1,6 @@
 let button = document.getElementById('service')
 button.addEventListener('click', ()=>{
-    window.location.href = '/Eventos'
+    window.location.href = '/evento/list'
 })
 
 const buttonMenu = document.getElementById('buttonMenu');
